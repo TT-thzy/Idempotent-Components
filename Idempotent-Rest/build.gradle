@@ -1,0 +1,14 @@
+apply plugin: 'war'
+war {
+    enabled true
+    archiveName "idempotent-components.war"
+}
+dependencies {
+    api project(":Idempotent-Core")
+
+    /* swagger */
+    api 'io.springfox:springfox-swagger2'
+    api 'io.springfox:springfox-swagger-ui'
+    //JSR-303 support
+    api 'io.springfox:springfox-bean-validators'
+}

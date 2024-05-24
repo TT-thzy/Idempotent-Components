@@ -1,0 +1,44 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  output:
+    ansi:
+      enabled: ALWAYS   #控制台彩色打印输出
+  mvc:
+    throw-exception-if-no-handler-found: true
+  data:
+    mongodb:
+      uri: ##待填充
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+  #spring redis连接配置
+  ###############################
+  redis:
+    time-out: 5000ms
+    #spring jedis连接池
+    sentinel:
+      master: ##待填充
+      nodes: ##待填充
+      password: ##待填充
+    #默認連接db
+    database: 0
+    password: ##待填充
+    client-type: lettuce
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include:
+          - beans
+          - health
+          - httptrace
+          - threaddump
+server:
+  servlet:
+    context-path: /idempotent-rest
+  port: 80

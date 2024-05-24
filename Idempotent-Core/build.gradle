@@ -1,0 +1,7 @@
+dependencies {
+    api project(":Idempotent-Common")
+
+    api('org.springframework.boot:spring-boot-starter-web')
+    api('org.springframework.boot:spring-boot-starter-aop')
+
+}

@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/Idempotent-Common/build/
+/Idempotent-Common/build/classes/java/main/
+/Idempotent-Core/build/
+/Idempotent-Core/build/classes/java/main/
+/Idempotent-Rest/build/
+/Idempotent-Rest/build/classes/java/main/
+/Idempotent-Storage-Support/build/
+/Idempotent-Storage-Support/build/classes/java/main/

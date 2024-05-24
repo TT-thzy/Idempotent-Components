@@ -1,0 +1,6 @@
+rootProject.name = 'Idempotent-Components'
+include 'Idempotent-Common'
+include 'Idempotent-Rest'
+include 'Idempotent-Core'
+include 'Idempotent-Storage-Support'
+
